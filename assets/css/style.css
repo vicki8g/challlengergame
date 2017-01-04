@@ -1,0 +1,270 @@
+body {
+	height: 100%;
+	background-color: black;
+	background-size: cover;
+}
+
+#arena {
+	border: solid 4px yellow;
+	display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1250px;	
+}
+
+#battle {
+	border: solid 2px green;
+	color: darkgray;
+	width: 394px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 308px;
+	background-color: #111111;
+	perspective: 375px;
+	z-index: 2;
+	overflow: auto;
+
+}
+
+#battle p {
+	transform: rotateX(50deg);
+	width: 394px;
+	max-height: 308px;
+}
+
+@keyframes bgscroll {
+  0% { background-position: 0 0; }
+  100% { background-position: -394px 0 0 0; /* 1500px = width of image */ }
+}
+
+#youHit {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: 'VT323';
+	color: green;
+	font-size: 18px;
+}
+
+#gotHit {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: 'VT323';
+	color: purple;
+	font-size: 18px;
+	transform: rotateX(45deg);
+}
+
+div.attack {
+	font-family: starwars;
+	color: yellow;
+	text-align: center;
+	font-size: 14pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #444444;
+}
+div.enemy {
+	font-family: starwars;
+	color: darkred;
+	text-align: center;
+	font-size: 14pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #444444;
+}
+
+.nameplate {
+	font-family: starwars;
+	font-style: outline;
+	color: yellow;
+	text-align: center;
+	font-size: 18pt;
+	height: 40px;
+} 
+.nameplate:hover {
+	color: orange;
+}
+
+div img {
+	width: 200px;
+	float: left;
+	height: 120px;
+}
+
+div.good {
+	width: 200px;
+	float: left;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 100%;
+	border: solid 4px blue; 
+	clear: none;
+	overflow: hidden;
+	background-color: #222;
+}
+
+div.bad {
+	width: 200px;
+	float: right;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 100%;
+	border: solid 4px red;
+	background-color: #222;
+}
+
+/*  lightside styles  */
+
+.good div p {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: 'VT323';
+	color: lightgreen;
+
+}
+
+/*#lightside div.good {
+	display: block;
+}*/
+
+/* darkside styles */
+
+.bad div p {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: 'VT323';
+	color: #ff0066;
+}
+
+.opponent {
+	border: solid 4px darkred !important;
+	/*margin-right: 40px !important;*/
+	float: left !important;
+}
+
+.hold {
+	width: 200px;
+	float: right;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 100%;
+	border: solid 4px lightgray;
+	background-color: gray;
+}
+
+.hold div p {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: 'VT323';
+	color: lightgray;
+}
+
+div.hold img {
+	opacity: 0.1;
+}
+
+div.hold p.nameplate {
+	color: #333;
+}
+
+.defeated {
+	width: 200px;
+	float: right;
+	display: inline-block;				 	
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 100%;
+	border: solid 4px lightgray;
+	background-color: gray;
+}
+
+.defeated div p {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: 'VT323';
+	color: lightgray;
+}
+
+div.defeated img {
+	opacity: 0.3;
+}
+
+div.defeated p.nameplate {
+	color: #333;
+}
+
+/*  sidious styles  */
+
+/*#sidious-stats {
+	float: left;
+	height: 120px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 120px;
+	border: solid 2px blue;
+}
+
+#sidious-stats p {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+  stormtrooper styles  
+
+#sidious-stats {
+	float: left;
+	height: 120px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 120px;
+	border: solid 2px blue;
+}
+
+#sidious-stats p {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;*/
+}
+
+
+

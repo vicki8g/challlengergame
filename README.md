@@ -1,2 +1,1 @@
-# challlengergame
-Dragon Ball Z challenger game
+# week-3-game
